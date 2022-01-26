@@ -58,16 +58,6 @@
               v-model="formRegister.phoneNumber"
             />
           </div>
-          <div class="mb-3">
-            <label for="address-register" class="form-label">Address : </label>
-            <input
-              type="text"
-              class="form-control"
-              id="address-register"
-              placeholder="Address"
-              v-model="formRegister.address"
-            />
-          </div>
           <div class="col-12 mx-auto text-center mt-4">
             <Button name="Register" @buttonClick="register"></Button>
           </div>
