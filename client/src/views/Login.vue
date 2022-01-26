@@ -92,9 +92,12 @@ export default {
         this.$router.push({ name: "Home" });
       }
     },
-    onSuccess: function (googleUser) {
+    onSuccess: async function (googleUser) {
       let idToken = googleUser.getAuthResponse().id_token;
-      this.postGoogleLogin(idToken);
+      await this.postGoogleLogin(idToken);
+      if (this.isLogin) {
+        this.$router.push({ name: "Home" });
+      }
     },
     onFailure: function () {
       console.log("error");
