@@ -4,8 +4,8 @@ import Vuex from 'vuex'
 import axios from "axios"
 import Swal from 'sweetalert2'
 
-const baseUrl = "http://localhost:3000";
-// const baseUrl = "https://p2-chalange1-branded.herokuapp.com";
+// const baseUrl = "http://localhost:3000";
+const baseUrl = "https://badminton-lover.herokuapp.com";
 
 const Toast = Swal.mixin({
   toast: true,
